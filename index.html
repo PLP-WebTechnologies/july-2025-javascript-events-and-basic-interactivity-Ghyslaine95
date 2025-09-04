@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Features</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Interactive Features</h1>
+            <p>Explore various JavaScript event handling techniques and interactive elements</p>
+        </header>
+        
+        <section id="event-handling">
+            <h2>JavaScript Event Handling</h2>
+            <p>Try these interactive elements to see JavaScript event handling in action:</p>
+            
+            <div class="event-box">
+                <div class="event-item" id="click-box">
+                    <h3>Click Me</h3>
+                    <p>Click to see an alert</p>
+                </div>
+                
+                <div class="event-item" id="mouseover-box">
+                    <h3>Hover Over Me</h3>
+                    <p>Hover to change color</p>
+                </div>
+                
+                <div class="event-item">
+                    <h3>Double Click Me</h3>
+                    <p>Double click to toggle visibility</p>
+                </div>
+                
+                <div class="event-item">
+                    <h3>Key Press</h3>
+                    <p>Press any key while hovering</p>
+                </div>
+            </div>
+            
+            <div id="event-output">
+                <p>Event feedback will appear here</p>
+            </div>
+        </section>
+        
+        <section id="interactive-features">
+            <h2>Interactive Elements</h2>
+            
+            <div class="feature">
+                <h3>Dark/Light Mode Toggle</h3>
+                <div class="toggle-container">
+                    <span>Light</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Dark</span>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <h3>Counter</h3>
+                <div class="counter">
+                    <button id="decrement-btn">-</button>
+                    <div class="counter-value" id="counter-value">0</div>
+                    <button id="increment-btn">+</button>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <h3>FAQ Section</h3>
+                <div class="faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is JavaScript?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What are event listeners?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Event listeners are functions that wait for a specific event to occur on a particular element, then execute code in response.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is DOM manipulation?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>DOM manipulation refers to changing the structure, style, or content of a web page using JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <h3>Dropdown Menu</h3>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Select Option</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                        <a href="#">Option 4</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <h3>Tabbed Interface</h3>
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                    </div>
+                    
+                    <div id="tab1" class="tab-content" style="display: block;">
+                        <h4>Content for Tab 1</h4>
+                        <p>This is the content for the first tab. Tabs are useful for organizing content in a compact space.</p>
+                    </div>
+                    
+                    <div id="tab2" class="tab-content">
+                        <h4>Content for Tab 2</h4>
+                        <p>This is the content for the second tab. Each tab can contain different types of information.</p>
+                    </div>
+                    
+                    <div id="tab3" class="tab-content">
+                        <h4>Content for Tab 3</h4>
+                        <p>This is the content for the third tab. Users can click between tabs to view different content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            <p>Please fill out the form below. All fields are required.</p>
+            
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error" id="name-error">Please enter a valid name (min 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password">
+                    <div class="error" id="password-error">Password must be at least 8 characters with one number and one special character</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    <div class="error" id="phone-error">Please enter a valid 10-digit phone number</div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Form</button>
+                
+                <div class="success" id="form-success">Form submitted successfully!</div>
+            </form>
+        </section>
+        
+        <footer>
+            <p>JavaScript Interactive Features Demo &copy; 2025</p>
+        </footer>
+    </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
